@@ -1,0 +1,22 @@
+{
+  "name": "cypress_e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint cypress/**/*.js && eslint",
+    "lint:fix": "slint cypress/**/*.js --fix && eslint cypress.config.js --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.15.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress-mailosaur": "^2.13.0",
+    "eslint": "^8.43.0",
+    "eslint-plugin-cypress": "^2.13.3"
+  }
+}
