@@ -5,7 +5,7 @@ describe('Singup', () => {
     const password = Cypress.env('USER_PASSWORD')
 
     it('CT_01 - Singup sucess', () => {
-      cy.fillSignupFormAndSubmit(emailAddress, password)
+      cy.guiLogin(emailAddress, password)
       cy.wait('@getNotes')
       cy.contains('h1', 'Your Notes').should('be.visible')
     })
